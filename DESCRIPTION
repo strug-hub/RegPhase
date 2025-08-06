@@ -1,0 +1,25 @@
+Package: RegPhase
+Type: Package
+Title: Regression on Phase
+Version: 0.1.0
+Author: Gengming He
+Maintainer: Gengming He <gengming.he@mail.utoronto.ca>
+Description: The Regression-on-Phase (RoP) package provides a statistical method 
+    to detect phase-specific effects between two genetic variants on 
+    a continuous or binary outcome. By modeling the cis and trans 
+    configurations of haplotypes, RoP enables researchers to test 
+    whether the phase relationship between alleles contributes 
+    to trait variation beyond marginal effects. The method supports 
+    both biallelic and multiallelic variants and is compatible with 
+    phased genotype data obtained from long-read sequencing or other 
+    phasing tools. The package includes core functions to perform the 
+    RoP test, along with detailed documentation and reproducible examples.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    lmtest
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
