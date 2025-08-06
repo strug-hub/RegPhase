@@ -1,6 +1,6 @@
-# RePhase: Regression-on-Phase Test for Genetic Variants
+# RegPhase: Regression-on-Phase Test for Genetic Variants
 
-The **RePhase** package implements the Regerssion on Phpase **(RoP)** test for detecting phase-specific (*cis* or *trans*) effects between **two genetic variants**—either *biallelic* or *multiallelic*—on a continuous or binary outcome. By explicitly modelling *cis* and *trans* configurations, RoP helps determine whether the phase relationship between alleles contributes to trait variation beyond marginal genotype effects.
+The **RegPhase** package implements the Regerssion on Phpase **(RoP)** test for detecting phase-specific (*cis* or *trans*) effects between **two genetic variants**—either *biallelic* or *multiallelic*—on a continuous or binary outcome. By explicitly modelling *cis* and *trans* configurations, RoP helps determine whether the phase relationship between alleles contributes to trait variation beyond marginal genotype effects.
 
 ## Installation
 
