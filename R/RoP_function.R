@@ -16,7 +16,7 @@
 #'             the other homologous chromosome, structured identically to
 #'             \code{Hap1}.
 #' @param family Character string specifying the GLM family to use.
-#'               Accepts \code{"gaussian"} (default) for continuous outcomes
+#'               Accepts \code{"gaussian"} for continuous outcomes
 #'               or \code{"binomial"} for binary outcomes.
 #'
 #' @return A named vector with elements \code{p_cis} and \code{p_trans}
@@ -39,7 +39,7 @@
 #' Trans<-Hap1[,1]*Hap2[,2]+Hap2[,1]*Hap1[,2]
 #' p<-exp(2*Trans)/(1+exp(2*Trans))
 #' Y<-rbinom(n=1000,size = 1,prob=p)
-#' RoP(Y,Hap1,Hap2,family="gaussian")
+#' RoP(Y,Hap1,Hap2,family="binomial")
 #'
 #' ##Example3: Continous Y, multi-allelic variants, Cis effect
 #' N=1000
