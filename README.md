@@ -18,7 +18,7 @@ RoP(Y, Hap1, Hap2, family = c("gaussian", "binomial"))
 ```
 | Argument | Description                                                                                                                                              |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Y`      | Numeric vector of length *n* containing the outcome.<br> `family = "gaussian"`: treated as continuous.<br>`family = "binomial"`: treated as binary. |
+| `Y`      | Numeric vector of length *n* containing the outcome.<br> `family = "gaussian"`: treated as continuous.<br>`family = "binomial"`: treated as binary, coded as 0/1. |
 | `Hap1`   | n by 2 integer matrix: haplotype on one homologous chromosome at the two variants.  Entries are integers indexing the observed alleles; within each column the smallest integer is taken as the reference allele.|
 | `Hap2`   | n by 2 integer matrix for the other homologous chromosome, structured identically to `Hap1`.                                                            |
 | `family` | `"gaussian"` or `"binomial"`, specifying the GLM family.                                                                                       |
@@ -51,7 +51,7 @@ Hap2<-matrix(rbinom(N*2,size = 1,prob=0.2),ncol=2)
 Trans<-Hap1[,1]*Hap2[,2]+Hap2[,1]*Hap1[,2]
 p<-exp(2*Trans)/(1+exp(2*Trans))
 Y<-rbinom(n=1000,size = 1,prob=p)
-RoP(Y,Hap1,Hap2,family="gaussian")
+RoP(Y,Hap1,Hap2,family="binomial")
 ```
 **Example 3:** Continous Y, multi-allelic variants, Cis effect
 
